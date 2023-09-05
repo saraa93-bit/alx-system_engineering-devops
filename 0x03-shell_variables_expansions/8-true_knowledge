@@ -1,0 +1,2 @@
+#!/bin/bash
+printf ((%s TRUEKNOWLEDGE+128 \n))
