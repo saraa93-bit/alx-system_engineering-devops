@@ -5,7 +5,7 @@ counter=1
 
 while [ $counter -lt 21 ]
 do
-    ((counter++))
+    echo $counter
     case $counter in
         4)
             echo "$counter and then bad luck from China"
@@ -20,4 +20,5 @@ do
             echo $counter
             ;;
     esac
+    ((counter++))
 done
