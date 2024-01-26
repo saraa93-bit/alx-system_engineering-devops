@@ -3,6 +3,5 @@
 # Use ps command to display processes
 # -e: Select all processes
 # -f: Full-format listing
-# H: Display process hierarchy
-# u: User-oriented format
-ps -ef
+
+ps -a -x -u -f
