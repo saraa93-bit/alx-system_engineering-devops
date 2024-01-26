@@ -2,11 +2,8 @@
 # a Bash script that displays Best School 10 times
 
 counter=0
-
-# Use an until loop to display "Best School" 10 times
-until [ $counter <=10 ]
+until [$counter<=10]
 do
     echo "Best School"
-    # Increment the counter
     ((counter++))
 done
