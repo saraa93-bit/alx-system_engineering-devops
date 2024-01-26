@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+# Initialize the hour and minute variables
+hour=0
+minute=1
+
+# Use a while loop to display the time
+while [ $hour -le 12 ] && [ $minute -le 59 ]
+do
+    printf "%02d:%02d\n" $hour $minute
+
+    # Increment the minute
+    ((minute++))
+
+    # If minute reaches 60, reset minute to 0 and increment hour
+    if [ $minute -eq 60 ]; then
+        minute=0
+        ((hour++))
+    fi
+done | head -n 70
