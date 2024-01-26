@@ -4,25 +4,11 @@
 counter=1
 while [ $counter -le 20 ]
 do
-    # Use the case statement to check for specific iterations
-    case $counter in
-        4)
-            echo "$counter"
-            echo "bad luck from China"
-            ;;
-        9)
-            echo "$counter"
-            echo "bad luck from Japan"
-            ;;
-        17)
-            echo "$counter"
-            echo "bad luck from Italy"
-            ;;
-        *)
-            echo "$counter"
-            ;;
-    esac
-
-    # Increment the counter
-    ((counter++))
+    echo "$counter"
+  case $counter in
+    "4") echo "bad luck from China";;
+    "9") echo "bad luck from Japan";;
+    "17") echo "bad luck from Italy";;
+  esac
+  (( count++ ))
 done
