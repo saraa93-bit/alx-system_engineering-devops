@@ -4,4 +4,4 @@
 # -e: Select all processes
 # -f: Full-format listing
 
-ps -a -x -u -f
+ps -aux
