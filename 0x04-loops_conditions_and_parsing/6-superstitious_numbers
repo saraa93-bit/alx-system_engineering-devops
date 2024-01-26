@@ -3,7 +3,7 @@
 
 counter=1
 
-while [ $counter -lt 20 ]
+while [ $counter -lt 21 ]
 do
     case $counter in
         4)
