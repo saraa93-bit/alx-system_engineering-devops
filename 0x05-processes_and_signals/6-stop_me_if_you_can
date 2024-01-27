@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Find the process ID (PID) of the '4-to_infinity_and_beyond' process
+
+pkill -f "4-to_infinity_and_beyond"
+if pgrep -f "4-to_infinity_and_beyond" > /dev/null; then
+    echo "Failed to stop '4-to_infinity_and_beyond' process."
+else
+    echo "Successfully stopped '4-to_infinity_and_beyond' process."
+fi
