@@ -1,3 +1,5 @@
+ #!/usr/bin/env bash
+ 
 apt update
 apt install nginx
 service nginx start
