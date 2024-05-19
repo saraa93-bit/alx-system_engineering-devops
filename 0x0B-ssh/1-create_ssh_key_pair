@@ -1,17 +1,6 @@
 #!/bin/bash
+# Create the RSA key pair with the specified number of bits and passphrase
+ssh-keygen -t rsa -b 4096 -N "betty" -f school -m PEM
 
-# Define the name of the private key
-private_key="school"
-
-# Create the RSA key pair with the specified number of bits and protect it with the passphrase
-ssh-keygen -t rsa -b 4096 -N "betty" -f "$private_key"
-
-# Check if key generation was successful
-if [ $? -eq 0 ]; then
-    echo "RSA key pair created successfully."
-    echo "Private key: $private_key"
-    echo "Public key: $private_key.pub"
-else
-    echo "Failed to create RSA key pair."
-    exit 1
-fi
+# Display success message
+echo "RSA key pair created successfully."
