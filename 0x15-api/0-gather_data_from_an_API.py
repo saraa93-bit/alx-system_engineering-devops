@@ -1,5 +1,5 @@
 #!/usr/bin/python3
- 
+
 """
 A script to fetch and display the TODO list progress for a given employee
 using a REST API.
@@ -10,7 +10,7 @@ import sys
 
 
 def get_employee_todo_progress(employee_id):
-   
+
     """
     Fetch and display the TODO list progress for a given employee.
 
