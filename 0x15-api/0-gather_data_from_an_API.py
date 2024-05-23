@@ -3,6 +3,15 @@ import requests
 import sys
 
 def get_employee_todo_progress(employee_id):
+    """
+    Fetch and display the list progress for a given employee.
+
+    Args:
+    employee_id (int): The ID of the employee.
+
+    Returns:
+    None
+    """
     # Base URL for the API
     base_url = "https://jsonplaceholder.typicode.com"
 
