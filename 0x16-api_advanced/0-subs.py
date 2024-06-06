@@ -7,7 +7,7 @@ import requests
 
 
 def number_of_subscribers(subreddit):
-    """returns the number of subscribers"""
+    """returns the number of subscribers""" 
     url = f"https://www.reddit.com/r/{subreddit}/about.json"
     response = requests.get(url, timeout=10, allow_redirects=False)
     if response.status_code == 200:
